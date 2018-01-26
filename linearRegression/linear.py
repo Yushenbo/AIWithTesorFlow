@@ -36,4 +36,7 @@ sess.run(tf.global_variables_initializer())
 for step in range(2001):
     sess.run(train)
     if step % 20 == 0:
-        print(step, sess.run(cost), sess.run(W), sess.run(b))
+        print('step:', step, ', cost:', sess.run(cost), ', W:', sess.run(W), 
+            ', b:', sess.run(b))
+
+print('-'*40, 'End', '-'*40)
